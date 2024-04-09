@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pra">this ia p tag</p>
+    <button id="btn1">btn-1</button>
+    <button id="btn2">btn-2</button>
+    <br><br>
+    <div id="colored-div" style="background-color: greenyellow; height: 100px; width: 100px;">
+        <p>
+            this is a p tag <a href="https://www.google.com" id="link">link</a>
+        </p>
+    </div>
+
+    <input type="text" id="inp1">
+
+
+    <script>
+        $("#btn1").click(function(){
+            //.text() returns the text ignoring all the html tags
+            // var txt= $("#colored-div").text();
+            // alert(txt);
+
+            //.html() returns with everything inside the button including tags
+            // var txt= $("#colored-div").html();
+            // alert(txt);
+            // $("#colored-div").html("<h1>heading</h1>");
+
+            // $("#btn1").click(function(){
+            //     var value= $("#inp1").val("ayush dama");
+            //     // alert(value);
+            // })
+
+
+            //getting attribute -
+            // $("#btn1").click(function(){
+            //     var value = $("#link").attr("href");
+            //     alert(value);
+            // })
+
+            //setting attribute using jquery
+            // $("#btn1").click(function(){
+            //     $("#link").attr("class", "black");
+            //     // alert(value);
+            // })
+
+
+            //change multiple attribute using single button
+            // $("#btn1").click(function(){
+            //     $("#link").attr({
+            //         "class": "black",
+            //         "href": "https://www.yahoo.com"
+            //     });
+            // })
+
+        });
+    </script>
+</body>
+</html>

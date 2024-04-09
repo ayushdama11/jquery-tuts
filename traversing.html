@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <ul> <!-- (grandparent) -->
+        <li>       <!-- (parent) -->
+            <span id="span1">item 1</span>  <!-- (child) -->
+        </li>
+        <li>        <!-- (parent) -->
+            <span id="span2">item 2</span>  <!-- (child) -->
+        </li>
+    </ul>
+
+    <script>
+        // var elm= $("#span1").parent();  //li
+        // elm.css("border", "1px solid red");
+
+        // var elm= $("#span1").parents(); 
+        // elm.css("border", "1px solid red");
+
+        // var elm= $("#span1").parentsUntil("body"); //body se pehle tak ke jitne b parent hai sabko border milega  
+        // elm.css("border", "1px solid red");
+
+        var elm= $("#list").find("#span2"); //only li will be selected not the span tag
+        elm.css("border", "1px solid red");
+    </script>
+</body>
+</html>

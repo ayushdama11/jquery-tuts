@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pra">this is a p tag</p>
+    <button id="btn">click</button>
+    <br><br>
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;"></div>
+    <!-- on clicking button it should hide the paragraph tag -->
+
+
+    <script>
+        // to hide the para
+        // $("#btn").click(function(){
+        //     $("#pra").hide();
+        // });
+
+        //to hide the button itself
+        // $(btn).dblclick(function(){
+        //     $(this).hide();
+        // })
+
+        // $("#colored-div").mouseenter(function(){
+        //     $("#pra").hide();
+        // })
+
+        // $("#colored-div").mouseleave(function(){
+        //     $("#pra").hide();
+        // })
+
+        // $("#colored-div").hover(function(){
+        //     $("#pra").hide();
+        // },
+        // function(){
+        //     $("#pra").show();
+        // })
+
+        //to do multiple thing on a single selected element
+        $("#colored-div").on({
+            click: function(){
+                $(this).css("background-color", "red");
+            },
+            mouseenter: function(){
+                $(this).css("background-color", "green");
+            },
+            mouseleave: function(){
+                $(this).css("background-color", "yellow");
+            }
+        });
+
+    </script>
+</body>
+</html>

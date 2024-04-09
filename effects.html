@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p id="pra">this ia p tag</p>
+    <button id="btn1">btn-1</button>
+    <button id="btn2">btn-2</button>
+    <button id="btn3">btn-3</button>
+    <button id="btn4">btn-4</button>
+
+    <br><br>
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;"></div>
+
+    <script>
+        // $("#btn1").click(function(){
+        //     $("#colored-div").hide(1000);
+        // });
+        // $("#btn2").click(function(){
+        //     $("#colored-div").show(2000);
+        // });
+
+        //fade-in , fade-out
+        // $("#btn1").click(function(){
+        //     $("#colored-div").fadeOut(1000);
+        // });
+        // $("#btn2").click(function(){
+        //     $("#colored-div").fadeIn(1000);
+        // });
+        // $("#btn3").click(function(){
+        //     $("#colored-div").fadeToggle(1000);
+        // });
+        // $("#btn4").click(function(){
+        //     $("#colored-div").fadeTo(1000, 0.3);
+        // })
+
+        // $("#btn1").click(function(){
+        //     $("#colored-div").slideUp(1000);
+        // });
+        // $("#btn2").click(function(){
+        //     $("#colored-div").slideDown(2000);
+        // });
+        // $("#btn3").click(function(){
+        //     $("#colored-div").slideToggle(1000);
+        // });
+
+        // animations
+        // $("#btn1").click(function(){
+        //     $("#colored-div").animate({
+        //         opacity: '0.5', 
+        //         height: '200px',
+        //         width: '50px'
+        //     }, 5000);
+        // });
+
+        //can stop in between the animation
+        // $("#btn2").click(function(){
+        //     $("#colored-div").stop();
+        // });
+
+        // $("#btn1").click(function(){
+        //     //after the div is hidden after that the callback function alert will occur
+        //     $("#colored-div").hide(3000, function(){
+        //         alert("div hidden");
+        //     });
+        // });
+        
+
+        // method chaining
+        $("#btn1").click(function(){
+            $("#colored-div").css("background-color", "red").slideUp(2000).slideDown(3000);
+        });
+
+
+
+    </script>
+</body>
+</html>
