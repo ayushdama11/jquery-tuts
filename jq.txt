@@ -1,0 +1,8 @@
+jquery is library of js
+it helps in simplifying js codes
+
+//purpose of jquery :-
+- simplify html dom tree traversal and manipulation, event handling, css animation and ajax
+- jquery runs exactly same in all major browsers [browser compatibility]
+
+
